@@ -29,7 +29,7 @@ elif plrace.lower == "hobbit":
 print(plstrength, plspeed, plint)
 
 print("You will start with a weapon of your choice.")
-pl.weapon = input("Pick a weapon: Battle Axe, Greatsword, Shortsword, Bow, Crossbow or Dagger: ")
+weapon1 = input("Pick a weapon: Battle Axe, Greatsword, Shortsword, Bow, Crossbow or Dagger: ")
 print(f"Greetings, {plclass} {plrace}! We need your help.")
 quest = input("Please pick a quest: Defending Gondor (1), Escaping to Helm's Deep (2), or Destroying the One Ring (3):")
 
