@@ -1,32 +1,32 @@
-pl.strength = 0
-pl.speed = 0
-pl.int = 0
+plstrength = 0
+plspeed = 0
+plint = 0
 print("Welcome to the Lord of the Rings RPG!")
 pl = input("Input player name here: ")
 plclass = input("Please pick a class: Wizard, Adventurer, High Ruler or Soldier: ")
 plrace = input("Please pick a race: Elf, Human, Dwarf or Hobbit: ")
 
 if plrace.lower == "elf":
-    pl.strength = 7
-    pl.speed = 8
-    pl.int = 9
+    plstrength = 7
+    plspeed = 8
+    plint = 9
 
 elif plrace.lower == "human":
-    pl.strength = 8
-    pl.speed = 6
-    pl.int = 7
+    plstrength = 8
+    plspeed = 6
+    plint = 7
 
 elif plrace.lower == "dwarf":
-    pl.strength = 9
-    pl.speed = 4
-    pl.int = 6
+    plstrength = 9
+    plspeed = 4
+    plint = 6
 
 elif plrace.lower == "hobbit":
-    pl.strength = 5
-    pl.speed = 8
-    pl.int = 7
+    plstrength = 5
+    plspeed = 8
+    plint = 7
 
-print(pl.strength, pl.speed, pl.int)
+print(plstrength, plspeed, plint)
 
 print("You will start with a weapon of your choice.")
 pl.weapon = input("Pick a weapon: Battle Axe, Greatsword, Shortsword, Bow, Crossbow or Dagger: ")
