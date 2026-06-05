@@ -26,6 +26,8 @@ elif plrace.lower == "hobbit":
     pl.speed = 8
     pl.int = 7
 
+print(pl.strength, pl.speed, pl.int)
+
 print("You will start with a weapon of your choice.")
 pl.weapon = input("Pick a weapon: Battle Axe, Greatsword, Shortsword, Bow, Crossbow or Dagger: ")
 print(f"Greetings, {plclass} {plrace}! We need your help.")
