@@ -1,0 +1,5 @@
+print("Welcome to the Lord of the Rings RPG!")
+player = input("Input player name here: ")
+plclass = input("Please pick a class: Wizard, Adventurer, High Ruler or Soldier: ")
+plrace = input("Please pick a race: Elf, Human, Dwarf or Hobbit: ")
+print(f"Greetings, {plclass} {plrace}! We need your help.")
