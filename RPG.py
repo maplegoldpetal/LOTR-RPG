@@ -43,7 +43,7 @@ class player:
         damagebonus = speed
         weaponreload = 1
 
-    def self.attack():
+    def self().attack():
         weaponchoice = input("Would you like to attack with hands (1) or your weapon (2)? Input your answer here:  ")
         if weaponchoice == "1":
             n = random.randint(1,10)
