@@ -44,6 +44,28 @@ class player:
         weaponreload = 1
 
     def attack():
-        choice = print("Would you like to attack with hands or a weapon?")
+        weaponchoice = input("Would you like to attack with hands (1) or your weapon (2)? Input your answer here:  ")
+        if weaponchoice == 1:
+            n = random.randint(1,10)
+            x = random.randint(1,5)
+            score = n + player.speed
+            damage = x + damagebonus
+            if score >= testmonster.ac:
+                print("Your attack hits!")
+                testmonster.hp -= damage
+        
+        if weaponchoice == 2:
+            n = random.randint(1,10)
+            x = random.randint(1,10)
+            score = n + damagebonus
+            damage = x + damagebonus
+            if score >= testmonster.ac:
+                print("Your attack hits!")
+                testmonster.hp -= damage
 
+class testmonster:
+    def __init__():
+        pass
+    hp == 50
+    ac == 16
 print(f"Hello, {player.name}. We need your help.")
