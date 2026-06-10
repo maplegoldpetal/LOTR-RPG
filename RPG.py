@@ -62,6 +62,7 @@ class player:
             if score >= testmonster.ac:
                 print("Your attack hits!")
                 testmonster.hp -= damage
+                print(testmonster.hp)
 
 class testmonster:
     def __init__():
