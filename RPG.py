@@ -64,7 +64,7 @@ class player:
             if score >= testmonster.ac:
                 print("Your attack hits!")
                 testmonster.hp -= damage
-                return testmonster.hp
+                print(f"The monster has {testmonster.hp} health remaining.")
             else:
                 print("You miss!")
 
