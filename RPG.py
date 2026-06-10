@@ -70,3 +70,4 @@ class testmonster:
     hp = 50
     ac = 16
 print(f"Hello, {player.name}. We need your help.")
+player.attack()
