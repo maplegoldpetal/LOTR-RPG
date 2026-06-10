@@ -1,3 +1,5 @@
+import random
+
 class player:
     name = input("Insert player name here: ")
     strength = 0
@@ -12,8 +14,16 @@ class player:
     if race == "Dwarf":
         strength = 9
         speed = 6
-        intelligence = 8
+        intelligence = 7
+    if race == "Human":
+        strength = 7
+        speed = 7
+        intelligence = 7
+    if race == "Hobbit":
+        strength = 5
+        speed = 9
+        intelligence =7
             
     weapon = input("Please pick a weapon: Greatsword (1), Bow (2), Axe(3) or Dagger (4): ")
 
-print(player.name)
+print(player.name,player.strength,player.speed, player.intelligence)
