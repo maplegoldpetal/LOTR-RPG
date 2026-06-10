@@ -59,8 +59,8 @@ class player:
         if weaponchoice == "2":
             n = random.randint(1,10)
             x = random.randint(1,10)
-            score = n + damagebonus
-            damage = x + damagebonus
+            score = n + player.damagebonus
+            damage = x + player.damagebonus
             if score >= testmonster.ac:
                 print("Your attack hits!")
                 testmonster.hp -= damage
