@@ -67,6 +67,6 @@ class player:
 class testmonster:
     def __init__():
         pass
-    hp == 50
-    ac == 16
+    hp = 50
+    ac = 16
 print(f"Hello, {player.name}. We need your help.")
