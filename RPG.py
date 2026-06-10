@@ -31,30 +31,32 @@ class player:
     weapon = input("Please pick a weapon: Greatsword (1), Bow (2), Axe(3) or Dagger (4): ")
 
     if weapon == "1":
-        damagebonus = "strength"
+        damagebonus = strength
         weaponreload = 2
     if weapon == "2":
-        damagebonus = "intelligence"
+        damagebonus = intelligence
         weaponreload = 1
     if weapon == "3":
-        damagebonus == "strength"
+        damagebonus = strength
         weaponreload = 3
     if weapon == "4":
-        damagebonus = "speed"
+        damagebonus = speed
         weaponreload = 1
 
-    def attack():
+    def self.attack():
         weaponchoice = input("Would you like to attack with hands (1) or your weapon (2)? Input your answer here:  ")
-        if weaponchoice == 1:
+        if weaponchoice == "1":
             n = random.randint(1,10)
             x = random.randint(1,5)
             score = n + player.speed
-            damage = x + damagebonus
+            damage = x + player.damagebonus
             if score >= testmonster.ac:
                 print("Your attack hits!")
                 testmonster.hp -= damage
+            else:
+                print("You miss!")
         
-        if weaponchoice == 2:
+        if weaponchoice == "2":
             n = random.randint(1,10)
             x = random.randint(1,10)
             score = n + damagebonus
@@ -63,6 +65,8 @@ class player:
                 print("Your attack hits!")
                 testmonster.hp -= damage
                 return testmonster.hp
+            else:
+                print("You miss!")
 
 class testmonster:
     def __init__():
@@ -70,4 +74,4 @@ class testmonster:
     hp = 50
     ac = 1
 print(f"Hello, {player.name}. We need your help.")
-player.attack()
+player().attack()
