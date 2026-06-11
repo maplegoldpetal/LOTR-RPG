@@ -88,11 +88,11 @@ class testmonster:
         pass
     hp = 50
     ac = 16
-print(f"Hello, {player.name}. We need your help.")
+print(f"Hello, {player.name}. We need your help. A monster has been ravaging our crops! Press a to attack, h to check your health or q to quit the game.")
 
 def choice():
     while True:
-        gameplaychoice = input()
+        gameplaychoice = input("Enter your choice: ")
         if gameplaychoice == "a":
             while testmonster.hp > 0:
                 player().attack()
