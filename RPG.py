@@ -90,3 +90,4 @@ def choice():
             quit()
         elif gameplaychoice == "h":
             print(f"Your health is {player.hp} out of 50.")
+choice()
