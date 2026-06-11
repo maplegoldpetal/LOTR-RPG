@@ -3,6 +3,8 @@ import random
 class player:
     def __init__(self):
         pass
+    hp = 50
+    ac = 16
     name = input("Welcome to the Lord of the Rings RPG. Insert player name here: ")
     strength = 0
     speed = 0
@@ -65,6 +67,10 @@ class player:
                 print("Your attack hits!")
                 testmonster.hp -= damage
                 print(f"The monster has {testmonster.hp} health remaining.")
+                if testmonster.hp <= 0:
+                    print("You have slain the monster!")
+                else:
+                    print("The monster is still alive!")
             else:
                 print("You miss!")
 
@@ -72,6 +78,15 @@ class testmonster:
     def __init__():
         pass
     hp = 50
-    ac = 1
+    ac = 16
 print(f"Hello, {player.name}. We need your help.")
-player().attack()
+
+def choice():
+    while True:
+        gameplaychoice = input()
+        if gameplaychoice == "a":
+            player().attack()
+        elif gameplaychoice == "q":
+            quit()
+        elif gameplaychoice == "h":
+            print(f"Your health is {player.hp} out of 50.")
