@@ -99,4 +99,6 @@ def choice():
             quit()
         elif gameplaychoice == "h":
             print(f"Your health is {player.hp} out of 50.")
+        else:
+            print("Didn't recognize that command. Please try again.")
 choice()
