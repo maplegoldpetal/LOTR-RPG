@@ -35,15 +35,23 @@ class player:
     if weapon == "1":
         damagebonus = strength
         weaponreload = 2
+        hitmessage = "You swing your greatsword with all your might and meet the target!"
+        missmessage = "You swing your greatsword with all your might but miss the target!"
     if weapon == "2":
         damagebonus = intelligence
         weaponreload = 1
+        hitmessage = "You nock an arrow and release it with precision!"
+        missmessage = "You nock an arrow and release it but miss the target!"
     if weapon == "3":
         damagebonus = strength
         weaponreload = 3
+        hitmessage = "You swing your axe with all your might and meet the target!"
+        missmessage = "You swing your axe with all your might but miss the target!"
     if weapon == "4":
         damagebonus = speed
         weaponreload = 1
+        hitmessage = "You strike with your dagger and meet the target!"
+        missmessage = "You strike with your dagger but miss the target!"
 
     def attack(self):
         weaponchoice = input("Would you like to attack with hands (1) or your weapon (2)? Input your answer here:  ")
@@ -53,10 +61,10 @@ class player:
             score = n + player.speed
             damage = x + player.damagebonus
             if score >= testmonster.ac:
-                print("Your attack hits!")
+                print(self.hitmessage)
                 testmonster.hp -= damage
             else:
-                print("You miss!")
+                print(self.missmessage)
         
         if weaponchoice == "2":
             n = random.randint(1,10)
@@ -64,7 +72,7 @@ class player:
             score = n + player.damagebonus
             damage = x + player.damagebonus
             if score >= testmonster.ac:
-                print("Your attack hits!")
+                print(self.hitmessage)
                 testmonster.hp -= damage
                 print(f"The monster has {testmonster.hp} health remaining.")
                 if testmonster.hp <= 0:
@@ -73,7 +81,7 @@ class player:
                     print("The monster is still alive!")
                     quit()
             else:
-                print("You miss!")
+                print(self.missmessage)
 
 class testmonster:
     def __init__():
