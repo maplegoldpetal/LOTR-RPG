@@ -1,4 +1,5 @@
 import random
+import time
 
 class player:
     def __init__(self):
@@ -96,6 +97,7 @@ def choice():
         if gameplaychoice == "a":
             while testmonster.hp > 0:
                 player().attack()
+                time.sleep(player.weaponreload)
         elif gameplaychoice == "q":
             quit()
         elif gameplaychoice == "h":
