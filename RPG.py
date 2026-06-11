@@ -71,6 +71,7 @@ class player:
                     print("You have slain the monster!")
                 else:
                     print("The monster is still alive!")
+                    quit()
             else:
                 print("You miss!")
 
