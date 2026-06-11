@@ -94,7 +94,8 @@ def choice():
     while True:
         gameplaychoice = input()
         if gameplaychoice == "a":
-            player().attack()
+            while testmonster.hp > 0:
+                player().attack()
         elif gameplaychoice == "q":
             quit()
         elif gameplaychoice == "h":
