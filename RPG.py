@@ -98,6 +98,14 @@ def choice():
             while testmonster.hp > 0:
                 player().attack()
                 time.sleep(player.weaponreload)
+                newchoice = input("Would you like to attack again? Press a to attack, h to check your health or e to escape the battle.")
+                if newchoice == "e":
+                    break
+                elif newchoice == "h":
+                        print(f"Your health is {player.hp} out of 50.")
+                elif newchoice == "a":
+                    continue
+                else: print("Didn't recognize that command. Please try again.")
         elif gameplaychoice == "q":
             quit()
         elif gameplaychoice == "h":
