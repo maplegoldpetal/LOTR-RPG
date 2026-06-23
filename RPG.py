@@ -67,7 +67,7 @@ class player:
             else:
                 print(self.missmessage)
         
-        if weaponchoice == "2":
+        while weaponchoice == "2":
             n = random.randint(1,10)
             x = random.randint(1,10)
             score = n + player.damagebonus
@@ -75,7 +75,7 @@ class player:
             if score >= testmonster.ac:
                 print(self.hitmessage)
                 testmonster.hp -= damage
-                print(f"The monster has {testmonster.hp} health remaining.")
+                print(f"The monster has {testmonster.hp} health remaining and you are on {player.hp} health.")
                 if testmonster.hp <= 0:
                     print("You have slain the monster!")
                 else:
@@ -89,6 +89,22 @@ class testmonster:
         pass
     hp = 50
     ac = 16
+    def attack(self):
+        x = random.randint(1,10)
+        score = x + 5
+        damage = x + 5
+        while score >= player.ac and testmonster.hp > 0:
+            print("The monster attacks you and hits!")
+            player.hp -= damage
+            print(f"The monster has {testmonster.hp} health remaining and you are on {player.hp} health.")
+            time.sleep(1)
+            if player.hp <= 0:
+                print("You have been slain by the monster!")
+                quit()
+        else:
+            print("The monster attacks you but misses!")
+
+
 print(f"Hello, {player.name}. We need your help. A monster has been ravaging our crops! Press a to attack, h to check your health or q to quit the game.")
 
 def choice():
