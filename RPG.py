@@ -114,7 +114,7 @@ if __name__ == "__main__":
             monster.attack(player1)
         if player1.hp <= 0:
             print(f"You have been defeated! Game Over.")
-            break
+            quit()
             if player.hp <= 0:
                 print("You have been slain by the monster!")
                 quit()
