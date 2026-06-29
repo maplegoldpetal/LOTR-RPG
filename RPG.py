@@ -77,6 +77,7 @@ class player:
                 print(f"The monster has {monster.hp} health remaining and you are on {self.hp} health.")
                 if monster.hp <= 0:
                     print("You have slain the monster!")
+                    quit()
                 else:
                     print("The monster is still alive!")
             else:
