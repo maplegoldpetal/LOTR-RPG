@@ -13,6 +13,7 @@ class player:
         self.weaponreload = 0
 
         race = input("Please pick a race: Elf, Dwarf, Human or Hobbit: ")
+        print(f"Welcome, {self.name} the {race}!")
         if race == "Elf":
             self.strength = 6
             self.speed = 8
