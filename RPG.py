@@ -109,7 +109,7 @@ if __name__ == "__main__":
     monster = testmonster()
     
     # Battle loop
-    print(f"Welcome, {self.name} the {classes}{race}!")
+    print(f"Welcome, {player1.name} the {player1.classes}{player1.race}!")
     while player1.hp > 0 and monster.hp > 0:
         player1.attack(monster)
         if monster.hp > 0:
