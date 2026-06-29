@@ -88,18 +88,18 @@ class testmonster:
         self.ac = 16
     
     def attack(self, player):
-        while player.hp > 0 and self.hp > 0:
-            x = random.randint(1,10)
-            score = x + 5
-            damage = x + 5
-            if score >= player.ac and self.hp > 0:
-                print("The monster attacks you and hits!")
-                player.hp -= damage
-                print(f"The monster has {self.hp} health remaining and you are on {player.hp} health.")
-                time.sleep(1)
-            else:
-                print("The monster attacks you but misses!")
-                time.sleep(1)
+        x = random.randint(1,10)
+        score = x + 5
+        damage = x + 5
+        if score >= player.ac and self.hp > 0:
+            print("The monster attacks you and hits!")
+            player.hp -= damage
+            print(f"The monster has {self.hp} health remaining and you are on {player.hp} health.")
+            time.sleep(1)
+        else:
+            print("The monster attacks you but misses!")
+            time.sleep(1)
+        x = random.randint(1,10)
 
 # Game execution
 if __name__ == "__main__":
