@@ -13,7 +13,7 @@ class player:
         self.weaponreload = 0
 
         race = input("Please pick a race: Elf, Dwarf, Human or Hobbit: ")
-        print(f"Welcome, {self.name} the {race}!")
+        classes = input("Please pick a class: Wizard, Barbarian, Paladin or Bard: ")
         if race == "Elf":
             self.strength = 6
             self.speed = 8
@@ -109,6 +109,7 @@ if __name__ == "__main__":
     monster = testmonster()
     
     # Battle loop
+    print(f"Welcome, {self.name} the {classes}{race}!")
     while player1.hp > 0 and monster.hp > 0:
         player1.attack(monster)
         if monster.hp > 0:
