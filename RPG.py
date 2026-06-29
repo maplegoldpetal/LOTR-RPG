@@ -56,8 +56,8 @@ class player:
     def attack(self, monster):
         weaponchoice = input("Would you like to attack with hands (1) or your weapon (2)? Input your answer here:  ")
         if weaponchoice == "1":
-            n = random.randint(1,10)
-            x = random.randint(1,5)
+            n = random.randint(1,20)
+            x = random.randint(1,10)
             score = n + self.speed
             damage = x + self.damagebonus
             if score >= monster.ac:
@@ -88,9 +88,9 @@ class testmonster:
         self.ac = 16
     
     def attack(self, player):
-        x = random.randint(1,10)
+        x = random.randint(1,20)
         score = x + 5
-        damage = x + 5
+        damage = x
         if score >= player.ac and self.hp > 0:
             print("The monster attacks you and hits!")
             player.hp -= damage
