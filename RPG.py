@@ -13,7 +13,7 @@ class player:
         self.weaponreload = 0
 
         race = input("Please pick a race: Elf, Dwarf, Human or Hobbit: ")
-        classes = input("Please pick a class: Wizard, Barbarian, Paladin or Bard: ")
+        self.classes = input("Please pick a class: Wizard, Barbarian, Paladin or Bard: ")
         if race == "Elf":
             self.strength = 6
             self.speed = 8
