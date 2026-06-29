@@ -12,21 +12,21 @@ class player:
         self.damagebonus = 0
         self.weaponreload = 0
 
-        race = input("Please pick a race: Elf, Dwarf, Human or Hobbit: ")
+        self.race = input("Please pick a race: Elf, Dwarf, Human or Hobbit: ")
         self.classes = input("Please pick a class: Wizard, Barbarian, Paladin or Bard: ")
-        if race == "Elf":
+        if self.race == "Elf":
             self.strength = 6
             self.speed = 8
             self.intelligence = 9
-        elif race == "Dwarf":
+        elif self.race == "Dwarf":
             self.strength = 9
             self.speed = 6
             self.intelligence = 7
-        elif race == "Human":
+        elif self.race == "Human":
             self.strength = 7
             self.speed = 7
             self.intelligence = 7
-        elif race == "Hobbit":
+        elif self.race == "Hobbit":
             self.strength = 5
             self.speed = 9
             self.intelligence = 7
