@@ -122,19 +122,3 @@ if __name__ == "__main__":
                 quit()
         else:
             print("The monster attacks you but misses!")
-
-def choice():
-    while True:
-        gameplaychoice = input("Enter your choice: ")
-        if gameplaychoice == "a":
-            while testmonster.hp > 0:
-                player().attack()
-                time.sleep(player.weaponreload)
-                testmonster().attack()
-        elif gameplaychoice == "q":
-            quit()
-        elif gameplaychoice == "h":
-            print(f"Your health is {player.hp} out of 50.")
-        else:
-            print("Didn't recognize that command. Please try again.")
-choice()
