@@ -103,8 +103,8 @@ class testmonster:
             time.sleep(1)
         x = random.randint(1,10)
 
-# Game execution
-if __name__ == "__main__":
+def battle():
+    if __name__ == "__main__":
     player1 = player()
     monster = testmonster()
     
@@ -118,7 +118,14 @@ if __name__ == "__main__":
             print(f"You have been defeated! Game Over.")
             quit()
             if player.hp <= 0:
-                print("You have been slain by the monster!")
+                print("You have been slain by the monster! Congratulations on your accomplishment.")
                 quit()
         else:
             print("The monster attacks you but misses!")
+
+print("""This is the Lord of the Rings RPG. 
+I am Gandalf, your guide. We are in grave danger.""")
+
+choice1 = input("""You have three choices that could decide the fate of Middle Earth. 
+Do you want to (1) visit the mines of Moria, (2) travel to Isengard, 
+or (3) deny the quest, quite possibly dooming the world.""")
