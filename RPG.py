@@ -119,7 +119,7 @@ def battle():
             quit()
             if player.hp <= 0:
                 print("You have been slain by the monster! Congratulations on your accomplishment.")
-                quit()
+                
         else:
             print("The monster attacks you but misses!")
 
@@ -129,3 +129,4 @@ I am Gandalf, your guide. We are in grave danger.""")
 choice1 = input("""You have three choices that could decide the fate of Middle Earth. 
 Do you want to (1) visit the mines of Moria, (2) travel to Isengard, 
 or (3) deny the quest, quite possibly dooming the world.""")
+
