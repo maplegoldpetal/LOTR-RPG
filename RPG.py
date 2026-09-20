@@ -105,8 +105,8 @@ class testmonster:
 
 def battle():
     if __name__ == "__main__":
-    player1 = player()
-    monster = testmonster()
+        player1 = player()
+        monster = testmonster()
     
     # Battle loop
     print(f"Welcome, {player1.name} the {player1.classes} {player1.race}!")
